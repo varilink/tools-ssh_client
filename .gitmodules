@@ -1,0 +1,3 @@
+[submodule "private"]
+	path = private
+	url = git@git:tools-ssh_client.git
