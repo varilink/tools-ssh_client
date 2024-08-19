@@ -1,0 +1,17 @@
+services:
+
+  ssh-client:
+
+    build: .
+
+    image: varilink/tools/ssh-client
+
+    cap_add:
+      - SYS_ADMIN
+
+    devices:
+      - /dev/fuse
+
+    security_opt:
+      - apparmor:unconfined
+
